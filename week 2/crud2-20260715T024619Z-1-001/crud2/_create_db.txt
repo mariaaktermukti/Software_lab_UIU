@@ -1,0 +1,20 @@
+create database Fall2025_CW;
+use Fall2025_CW;
+
+create table Teacher ( 
+	id INT(10) AUTO_INCREMENT, 
+	name char(30), 
+	course_id char(30),
+	PRIMARY KEY(id) 
+);
+
+create table Course ( 
+	id char(30), 
+	title char(30), 
+	PRIMARY KEY(id) 
+);
+
+insert into Teacher values ( '', 'Somik', 'CSE3421');
+insert into Teacher values ( '', 'Utsa', 'CSE2233');
+insert into Course values ( 'CSE3421', 'SE');
+insert into Course values ( 'CSE2233', 'TOC');
